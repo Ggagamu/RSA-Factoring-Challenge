@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-def is_sqrd(num):
+def is_sqr(num):
     """check if a number is squared"""
     import math
 
@@ -8,7 +8,7 @@ def is_sqrd(num):
         return (True)
     return (False)
 
-def is_RSA(n):
+def is_rsa(n):
     """Get RSA of a number"""
     import math
     from prime import is_prime
@@ -16,7 +16,7 @@ def is_RSA(n):
     a = int(math.sqrt(n)) + 1
     while True:
         b = a ** 2 - n
-        if is_sqrd(b):
+        if is_sqr(b):
             c = math.sqrt(b)
             break
         a = a + 1
